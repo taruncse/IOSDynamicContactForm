@@ -30,8 +30,8 @@ class ViewController: FormViewController {
         // Get the value of all rows which have a Tag assigned
         // The dictionary contains the 'rowTag':value pairs.
         let valuesDictionary = form.values() as NSDictionary
-        let multipleEmail = valuesDictionary.value(forKey: "tagMultiplePhone")// as! [User]
-        //print("\(multipleEmail[0])")
+//        let multipleEmail = valuesDictionary.value(forKey: "tagMultiplePhone")// as! [User]
+        print("\(valuesDictionary)")
          //print("\(form.values())")
     }
     override func viewDidLoad() {
@@ -79,32 +79,29 @@ class ViewController: FormViewController {
         form +++
             MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
                                 //$0.tag = "tagAddPhone"
-                                $0.addButtonProvider = { section in
-                                    return ButtonRow(){
-                                        $0.title = "Add Phone Number"
-                                        }.cellUpdate { cell, row in
-                                            cell.textLabel?.textAlignment = .left
+                                $0.addButtonProvider = { _ in return ButtonRow {
+                                        $0.title = "Add Tag"
+                                    }.cellUpdate { cell, row in
+                                        cell.textLabel?.textAlignment = .left
                                     }
                                 }
                 
                                 $0.tag = "tagMultiplePhone"
                                 $0.multivaluedRowToInsertAt = { index in
-//                                    return NameRow() {
-//                                        $0.placeholder = "Phone Number\(index)"
-//                                    }
+                                    return UserInfoRow {
+                                        $0.title = "Date"
+                                        $0.value = User(name: "TKB", email: "tkb@gmail.com")
+                                    }
                                     
                                     //return AddPhoneRow()
                                     //return UserInfoRow()
-                                    
-                                    
-                                       return  UserInfoRow { row in
-                                            row.value = User(name: "Mathias",
-                                                             email: "mathias@xmartlabs.com",
-                                                             dateOfBirth: Date(timeIntervalSince1970: 712119600),
-                                                             pictureUrl: URL(string: "http://lh4.ggpht.com/VpeucXbRtK2pmVY6At76vU45Q7YWXB6kz25Sm_JKW1tgfmJDP3gSAlDwowjGEORSM-EW=w300"))
-                                    
-                                    
-                                }
+//                                    let row = UserInfoRow(tag: "phninfo2")
+//                                    row.value = User(name: "Mathias",
+//                                            email: "mathias@xmartlabs.com",
+//                                            dateOfBirth: Date(timeIntervalSince1970: 712119600),
+//                                            pictureUrl: URL(string: "http://lh4.ggpht.com/VpeucXbRtK2pmVY6At76vU45Q7YWXB6kz25Sm_JKW1tgfmJDP3gSAlDwowjGEORSM-EW=w300"))
+//
+//                                    return row
         }
        form +++ Section("Email")
      //+++ Section("Contact")
@@ -115,13 +112,12 @@ class ViewController: FormViewController {
         }
         +++
         MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
-            
-            $0.addButtonProvider = { section in
-                return ButtonRow(){
-                    $0.title = "Add Email"
-                    }.cellUpdate { cell, row in
-                        cell.textLabel?.textAlignment = .left
-                }
+
+            $0.addButtonProvider = { _ in return ButtonRow {
+                $0.title = "Add Email "
+            }.cellUpdate { cell, row in
+                cell.textLabel?.textAlignment = .left
+            }
             }
             $0.tag = "tagMultipleEmail"
             $0.multivaluedRowToInsertAt = { index in
@@ -152,6 +148,7 @@ class ViewController: FormViewController {
                 
                 return AddAssistantRow()
             }
+
         }
         
         +++

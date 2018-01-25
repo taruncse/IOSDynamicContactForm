@@ -13,6 +13,8 @@ final class UserInfoRow: Row<UserInfoCell>, RowType {
         super.init(tag: tag)
         cellProvider = CellProvider<UserInfoCell>(nibName: "UserInfoCell")
     }
+
+
 }
 
 final class UserInfoCell: Cell<User>, CellType {
@@ -73,24 +75,25 @@ final class UserInfoCell: Cell<User>, CellType {
         guard let user = row.value else { return }
 
         // set the image to the userImageView. You might want to do this with AlamofireImage or another similar framework in a real project
-        if let url = user.pictureUrl, let data = try? Data(contentsOf: url) {
-            userImageView.image = UIImage(data: data)
-        } else {
-            userImageView.image = UIImage(named: "placeholder")
-        }
+//        if let url = user.pictureUrl, let data = try? Data(contentsOf: url) {
+//            userImageView.image = UIImage(data: data)
+//        } else {
+//            userImageView.image = UIImage(named: "placeholder")
+//        }
 
         // set the texts to the labels
         emailLabel.text = user.email
         nameLabel.text = user.name
-        dateLabel.text = UserInfoCell.dateFormatter.string(from: user.dateOfBirth)
+//        dateLabel.text = UserInfoCell.dateFormatter.string(from: user.dateOfBirth)
     }
 }
 
 struct User: Equatable {
     var name: String
     var email: String
-    var dateOfBirth: Date
-    var pictureUrl: URL?
+//    var dateOfBirth: Date
+//    var pictureUrl: URL?
+    public var description: String { return "MyClass: \(name)" }
 }
 
 func ==(lhs: User, rhs: User) -> Bool {

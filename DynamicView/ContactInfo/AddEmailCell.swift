@@ -9,10 +9,12 @@ import Foundation
 import Eureka
 import DropDown
 
-final class AddEmailRow: Row<AddEmailCell>, RowType {
+final class AddEmailRow: Row<AddEmailCell>, RowType, InlineRowType {
     required init(tag: String?) {
         super.init(tag: tag)
         cellProvider = CellProvider<AddEmailCell>(nibName: "AddEmail")
+        //value = Email(numberType: "hello", number: "world")
+
     }
 }
 
@@ -97,8 +99,11 @@ final class AddEmailCell: Cell<Email>, CellType {
        // }
         
         // set the texts to the labels
-        emailTextField.text = user.number
-        relationLabel.text = user.numberType
+//        emailTextField.text = user.number
+//        relationLabel.text = user.numberType
+    emailTextField.text = "hi there"
+        relationLabel.text = "boo"
+
         //nameLabel.text = user.name
         //dateLabel.text = AddSocialMedia.dateFormatter.string(from: user.dateOfBirth)
     }
@@ -108,6 +113,8 @@ final class AddEmailCell: Cell<Email>, CellType {
 struct Email: Equatable {
     var numberType: String
     var number: String
+
+    public var description: String { return "MyClass: \(number) \(numberType)" }
 }
 
 func ==(lhs: Email, rhs: Email) -> Bool {
