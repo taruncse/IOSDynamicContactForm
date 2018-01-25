@@ -7,14 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B1C95F7CBFD7AF50DBDEA0 /* Pods_DynamicView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC696184B813A09A9BBE110 /* Pods_DynamicView.framework */; };
+		563869B11FDE98E000470E64 /* AddFamilyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563869AF1FDE98E000470E64 /* AddFamilyCell.swift */; };
+		563869B21FDE98E000470E64 /* AddSocialMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563869B01FDE98E000470E64 /* AddSocialMediaCell.swift */; };
+		563869B41FDFA16200470E64 /* AddPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563869B31FDFA16200470E64 /* AddPhone.xib */; };
+		563869B61FDFA18E00470E64 /* AddPhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563869B51FDFA18E00470E64 /* AddPhoneCell.swift */; };
+		563869B91FDFACA100470E64 /* AddEmail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563869B71FDFACA100470E64 /* AddEmail.xib */; };
+		563869BA1FDFACA100470E64 /* AddEmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563869B81FDFACA100470E64 /* AddEmailCell.swift */; };
+		56EF3B901FDE7A46004474FA /* AddAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EF3B8C1FDE7A46004474FA /* AddAddress.xib */; };
+		56EF3B911FDE7A46004474FA /* AddAssistant.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EF3B8D1FDE7A46004474FA /* AddAssistant.xib */; };
+		56EF3B921FDE7A46004474FA /* AddSocialMedia.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EF3B8E1FDE7A46004474FA /* AddSocialMedia.xib */; };
+		56EF3B931FDE7A46004474FA /* AddFamily.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EF3B8F1FDE7A46004474FA /* AddFamily.xib */; };
+		56EF3B961FDE7CC7004474FA /* AddAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF3B951FDE7CC6004474FA /* AddAddressCell.swift */; };
+		56EF3B981FDE90B0004474FA /* AddAssistantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF3B971FDE90B0004474FA /* AddAssistantCell.swift */; };
 		56F37BA81FD814B100FCFAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F37BA71FD814B100FCFAE6 /* AppDelegate.swift */; };
 		56F37BAA1FD814B100FCFAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F37BA91FD814B100FCFAE6 /* ViewController.swift */; };
 		56F37BAD1FD814B100FCFAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F37BAB1FD814B100FCFAE6 /* Main.storyboard */; };
 		56F37BAF1FD814B100FCFAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F37BAE1FD814B100FCFAE6 /* Assets.xcassets */; };
 		56F37BB21FD814B100FCFAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F37BB01FD814B100FCFAE6 /* LaunchScreen.storyboard */; };
+		56F37BBC1FD928EC00FCFAE6 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F37BBA1FD928EC00FCFAE6 /* ImagePickerController.swift */; };
+		56F37BBD1FD928EC00FCFAE6 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F37BBB1FD928EC00FCFAE6 /* ImageRow.swift */; };
+		56F37BBF1FDA6F9200FCFAE6 /* CustomeUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F37BBE1FDA6F9200FCFAE6 /* CustomeUI.xib */; };
+		56F37BC31FDAA2ED00FCFAE6 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F37BC21FDAA2ED00FCFAE6 /* UserInfoCell.swift */; };
+		56F37BC51FDAA2F600FCFAE6 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F37BC41FDAA2F600FCFAE6 /* UserInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		563869AF1FDE98E000470E64 /* AddFamilyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyCell.swift; sourceTree = "<group>"; };
+		563869B01FDE98E000470E64 /* AddSocialMediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSocialMediaCell.swift; sourceTree = "<group>"; };
+		563869B31FDFA16200470E64 /* AddPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPhone.xib; sourceTree = "<group>"; };
+		563869B51FDFA18E00470E64 /* AddPhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhoneCell.swift; sourceTree = "<group>"; };
+		563869B71FDFACA100470E64 /* AddEmail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEmail.xib; sourceTree = "<group>"; };
+		563869B81FDFACA100470E64 /* AddEmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmailCell.swift; sourceTree = "<group>"; };
+		56EF3B8C1FDE7A46004474FA /* AddAddress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddAddress.xib; path = DynamicView/ContactInfo/AddAddress.xib; sourceTree = SOURCE_ROOT; };
+		56EF3B8D1FDE7A46004474FA /* AddAssistant.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddAssistant.xib; path = DynamicView/ContactInfo/AddAssistant.xib; sourceTree = SOURCE_ROOT; };
+		56EF3B8E1FDE7A46004474FA /* AddSocialMedia.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddSocialMedia.xib; path = DynamicView/ContactInfo/AddSocialMedia.xib; sourceTree = SOURCE_ROOT; };
+		56EF3B8F1FDE7A46004474FA /* AddFamily.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddFamily.xib; path = DynamicView/ContactInfo/AddFamily.xib; sourceTree = SOURCE_ROOT; };
+		56EF3B951FDE7CC6004474FA /* AddAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressCell.swift; sourceTree = "<group>"; };
+		56EF3B971FDE90B0004474FA /* AddAssistantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAssistantCell.swift; sourceTree = "<group>"; };
 		56F37BA41FD814B100FCFAE6 /* DynamicView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F37BA71FD814B100FCFAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56F37BA91FD814B100FCFAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +52,14 @@
 		56F37BAE1FD814B100FCFAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F37BB11FD814B100FCFAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F37BB31FD814B100FCFAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F37BBA1FD928EC00FCFAE6 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		56F37BBB1FD928EC00FCFAE6 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		56F37BBE1FDA6F9200FCFAE6 /* CustomeUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomeUI.xib; sourceTree = "<group>"; };
+		56F37BC21FDAA2ED00FCFAE6 /* UserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		56F37BC41FDAA2F600FCFAE6 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = SOURCE_ROOT; };
+		5C8E7F5E0E92A96638E45540 /* Pods-DynamicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicView/Pods-DynamicView.release.xcconfig"; sourceTree = "<group>"; };
+		5DC696184B813A09A9BBE110 /* Pods_DynamicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CA08CDD6AA0412095FC557 /* Pods-DynamicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicView/Pods-DynamicView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +67,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B1C95F7CBFD7AF50DBDEA0 /* Pods_DynamicView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4539D7C00A514344347161F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DC696184B813A09A9BBE110 /* Pods_DynamicView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5154AEB52F553DA0AA262616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08CDD6AA0412095FC557 /* Pods-DynamicView.debug.xcconfig */,
+				5C8E7F5E0E92A96638E45540 /* Pods-DynamicView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56EF3B941FDE7A90004474FA /* ContactInfo */ = {
+			isa = PBXGroup;
+			children = (
+				563869B71FDFACA100470E64 /* AddEmail.xib */,
+				563869B81FDFACA100470E64 /* AddEmailCell.swift */,
+				563869AF1FDE98E000470E64 /* AddFamilyCell.swift */,
+				563869B01FDE98E000470E64 /* AddSocialMediaCell.swift */,
+				56EF3B971FDE90B0004474FA /* AddAssistantCell.swift */,
+				56EF3B951FDE7CC6004474FA /* AddAddressCell.swift */,
+				563869B51FDFA18E00470E64 /* AddPhoneCell.swift */,
+				563869B31FDFA16200470E64 /* AddPhone.xib */,
+				56EF3B8C1FDE7A46004474FA /* AddAddress.xib */,
+				56EF3B8D1FDE7A46004474FA /* AddAssistant.xib */,
+				56EF3B8F1FDE7A46004474FA /* AddFamily.xib */,
+				56EF3B8E1FDE7A46004474FA /* AddSocialMedia.xib */,
+			);
+			path = ContactInfo;
+			sourceTree = "<group>";
+		};
 		56F37B9B1FD814B100FCFAE6 = {
 			isa = PBXGroup;
 			children = (
+				56F37BBE1FDA6F9200FCFAE6 /* CustomeUI.xib */,
 				56F37BA61FD814B100FCFAE6 /* DynamicView */,
 				56F37BA51FD814B100FCFAE6 /* Products */,
+				5154AEB52F553DA0AA262616 /* Pods */,
+				4539D7C00A514344347161F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +132,27 @@
 		56F37BA61FD814B100FCFAE6 /* DynamicView */ = {
 			isa = PBXGroup;
 			children = (
+				56EF3B941FDE7A90004474FA /* ContactInfo */,
+				56F37BB91FD928EC00FCFAE6 /* ImageRow */,
 				56F37BA71FD814B100FCFAE6 /* AppDelegate.swift */,
 				56F37BA91FD814B100FCFAE6 /* ViewController.swift */,
 				56F37BAB1FD814B100FCFAE6 /* Main.storyboard */,
+				56F37BC21FDAA2ED00FCFAE6 /* UserInfoCell.swift */,
+				56F37BC41FDAA2F600FCFAE6 /* UserInfoCell.xib */,
 				56F37BAE1FD814B100FCFAE6 /* Assets.xcassets */,
 				56F37BB01FD814B100FCFAE6 /* LaunchScreen.storyboard */,
 				56F37BB31FD814B100FCFAE6 /* Info.plist */,
 			);
 			path = DynamicView;
+			sourceTree = "<group>";
+		};
+		56F37BB91FD928EC00FCFAE6 /* ImageRow */ = {
+			isa = PBXGroup;
+			children = (
+				56F37BBA1FD928EC00FCFAE6 /* ImagePickerController.swift */,
+				56F37BBB1FD928EC00FCFAE6 /* ImageRow.swift */,
+			);
+			path = ImageRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56F37BB61FD814B100FCFAE6 /* Build configuration list for PBXNativeTarget "DynamicView" */;
 			buildPhases = (
+				808647E1F59BC6ABDB476283 /* [CP] Check Pods Manifest.lock */,
 				56F37BA01FD814B100FCFAE6 /* Sources */,
 				56F37BA11FD814B100FCFAE6 /* Frameworks */,
 				56F37BA21FD814B100FCFAE6 /* Resources */,
+				9C604198B01F9F4CEF54985E /* [CP] Embed Pods Frameworks */,
+				B08DA39C96865723A3FC6CB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,20 +217,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F37BBF1FDA6F9200FCFAE6 /* CustomeUI.xib in Resources */,
 				56F37BB21FD814B100FCFAE6 /* LaunchScreen.storyboard in Resources */,
+				56EF3B911FDE7A46004474FA /* AddAssistant.xib in Resources */,
+				563869B91FDFACA100470E64 /* AddEmail.xib in Resources */,
+				56EF3B901FDE7A46004474FA /* AddAddress.xib in Resources */,
 				56F37BAF1FD814B100FCFAE6 /* Assets.xcassets in Resources */,
+				56F37BC51FDAA2F600FCFAE6 /* UserInfoCell.xib in Resources */,
+				563869B41FDFA16200470E64 /* AddPhone.xib in Resources */,
+				56EF3B931FDE7A46004474FA /* AddFamily.xib in Resources */,
 				56F37BAD1FD814B100FCFAE6 /* Main.storyboard in Resources */,
+				56EF3B921FDE7A46004474FA /* AddSocialMedia.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		808647E1F59BC6ABDB476283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C604198B01F9F4CEF54985E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DynamicView/Pods-DynamicView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicView/Pods-DynamicView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08DA39C96865723A3FC6CB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicView/Pods-DynamicView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56F37BA01FD814B100FCFAE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563869B61FDFA18E00470E64 /* AddPhoneCell.swift in Sources */,
+				56F37BBD1FD928EC00FCFAE6 /* ImageRow.swift in Sources */,
+				563869B11FDE98E000470E64 /* AddFamilyCell.swift in Sources */,
 				56F37BAA1FD814B100FCFAE6 /* ViewController.swift in Sources */,
+				563869B21FDE98E000470E64 /* AddSocialMediaCell.swift in Sources */,
+				56EF3B961FDE7CC7004474FA /* AddAddressCell.swift in Sources */,
+				56EF3B981FDE90B0004474FA /* AddAssistantCell.swift in Sources */,
+				56F37BBC1FD928EC00FCFAE6 /* ImagePickerController.swift in Sources */,
+				56F37BC31FDAA2ED00FCFAE6 /* UserInfoCell.swift in Sources */,
+				563869BA1FDFACA100470E64 /* AddEmailCell.swift in Sources */,
 				56F37BA81FD814B100FCFAE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +439,13 @@
 		};
 		56F37BB71FD814B100FCFAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6CA08CDD6AA0412095FC557 /* Pods-DynamicView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BRAT85TNTY;
 				INFOPLIST_FILE = DynamicView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tkb.dynamicAlert.DynamicView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +456,13 @@
 		};
 		56F37BB81FD814B100FCFAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8E7F5E0E92A96638E45540 /* Pods-DynamicView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BRAT85TNTY;
 				INFOPLIST_FILE = DynamicView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tkb.dynamicAlert.DynamicView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

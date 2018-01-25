@@ -1,0 +1,1031 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02CAE638EF1CEEBD6F5740498F9CA3F8 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB103BDE50D940803865CBA82A4DF10 /* DropDown.swift */; };
+		02F07D843F3B3151880D1E67205C11A0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1570A6DA5164B692C8815A19224F1F /* Core.swift */; };
+		04A9A536DFAF3C5EC723F92EED127215 /* SegmentedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7058172200DEEDC074E2A523BE46ECA3 /* SegmentedRow.swift */; };
+		098F056D90AF9CD3FD60D8A81DF043B6 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D29DCA10491E3950FC1E9B327F0AE /* DropDownCell.swift */; };
+		0B2FCAF300C1B74DA6343E48B7D5F3F6 /* PickerInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607E6E957523BBC263B3920A5275376E /* PickerInlineRow.swift */; };
+		0C19B0ADBDDF9D1F35443473DD32F58C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1DCF41BA297F9CC28419322BB9C480 /* Form.swift */; };
+		0F47F6ABDFD61B71965C06B833435E53 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260EC5F6A4229B0C6BC3A0A4468379E /* Protocols.swift */; };
+		0F4FAA477A8C3708CC93E84D2B069084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		144A795542A55FCA27F839FD8B3848AD /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C5DA4D971CF4C4B5C41BA4725E8FC /* CellType.swift */; };
+		17048D78835182A0B4E9D7926DA75DAD /* PopoverSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB25F8CE5A4307A47C3F1204302F94F /* PopoverSelectorRow.swift */; };
+		1772EAFC71C30BD931A9585212CA03AC /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB9FA9092208500F053E3CBC1B8674 /* Row.swift */; };
+		17A3FB1B471D1C1A61BCFBBF5831D845 /* RowControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A140B16EDE8C0D467B1E36A7DCDDEE29 /* RowControllerType.swift */; };
+		1ACA00A9EC125081B88B9228462431B8 /* ButtonRowWithPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5E9CC62F06D50A852D15E11BEFA676 /* ButtonRowWithPresent.swift */; };
+		1C5B941F79B39828B27EAAD3C9AF7B4B /* PickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E85D177C9B61B8ABCC15B98047DF7 /* PickerRow.swift */; };
+		1D4CD70DC32B037FCD6320FE079695D5 /* CheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE072BCBD9184CE1E5303F3B788E7FC3 /* CheckRow.swift */; };
+		1EEFBE2820F6BEAC9BAD184673293C9E /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266CFD06B4B10097FFEEDBA9B120ED6 /* NavigationAccessoryView.swift */; };
+		2189F5569BACCE66FD41F5E58FF351B8 /* DateInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E46C33706DC9C5D8804E9096E2345 /* DateInlineRow.swift */; };
+		23E6887F5ADC8D4917BC12B079864E1D /* FieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93264D08BBC73CFD2907760F9C822F0 /* FieldRow.swift */; };
+		25A70264F9301E7603D9883777DE8050 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB60FDABF04878CB9319C3FCC5E4B235 /* SelectorViewController.swift */; };
+		265A3BCF8B426717E8EE1CAD4341F99A /* DateFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BCA154232698B305E882E67DE0479 /* DateFieldRow.swift */; };
+		267B635686617BA1A01987009E16DE86 /* Pods-DynamicView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 197E16ED5E1C75A6A9720121BF77F5E0 /* Pods-DynamicView-dummy.m */; };
+		28500C67AF0CB1EB34B53FFA93C3D27F /* ListCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FC25AB756ACAF66776AD374ADE5BB /* ListCheckRow.swift */; };
+		29DBA0C923DE13772022DB52DBAF3CEE /* PushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE561F44AA625A03A711EA82C25137B /* PushRow.swift */; };
+		2A179EA67ECDDBB23F30CF0B0A71A617 /* ActionSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB714EB7749ED69AC48A0342FD9686 /* ActionSheetRow.swift */; };
+		2E7E74DF0C455B0BC43BFDD1D0163E64 /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B184A2807F169B813F0D4483AEF57FB8 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9CD6F441E6B30601549781F5DB2D12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		306BD477167820D6CDECDCE1D7445ECD /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8561CF0DAC58FE8F70249B49271B7 /* SliderRow.swift */; };
+		37C293AEA575D6E5186739D1B07805F2 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2407617D860C86D1D15DF19AE0A511FA /* DropDownCell.xib */; };
+		3E89604392C5EBDC5E27937AA57C5AC0 /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F0BB00B7B9994F115B9CF6D28A288 /* SwitchRow.swift */; };
+		3F0D960DBEF20736A7A505A9250942F1 /* Eureka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4C07FCF8741A517A4B18DB7008147C /* Eureka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		442ADADA3215E1E5CA1557E708D4228C /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9658AB17769294E98AB2294361408452 /* DropDown+Appearance.swift */; };
+		4EA524A2BD2D970745B89DAADDF7719E /* PresenterRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E3BD76A64B4590AFFB94621FB18BA /* PresenterRowType.swift */; };
+		51F62349D05FCB3B6E1E8AD406DEEFE7 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA560DA534A873D5BCB9351819B7A04F /* Section.swift */; };
+		57F029A6EAD66812E9B0C1319AFE527B /* LabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E6462FFA11CDFD6F8BEB1BCAFB869B /* LabelRow.swift */; };
+		59947C008333007F823B0922EE87F96B /* MultipleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21CCE523FD32BF402FACB83799A0D7A /* MultipleSelectorViewController.swift */; };
+		5A380E0127635057397F45AFBD13B255 /* Eureka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C509027B3871BA04E4652DD7B31396 /* Eureka-dummy.m */; };
+		5D647533060C688C633E15C86553B868 /* DatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9043F5A85B4F90768FAE530580C9756D /* DatePickerRow.swift */; };
+		654744F1D8E5A8DB4711E81DC6CC99C3 /* AlertRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C13CB48FBDD8DD85CE152130B2B67B /* AlertRow.swift */; };
+		6F9F25DE63532C8DE5077822E6316111 /* DateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49E8E8460ADE20F83566896472A6741 /* DateRow.swift */; };
+		76110C1B9D1144D99D2C179DC74121DD /* MultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181AC53A7E3873223DCEDAF8A9B7D31 /* MultipleSelectorRow.swift */; };
+		7B19019174C42D7D481C1B120272443B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F55061BBD8A0257465D27C038CA092 /* Operators.swift */; };
+		7CE512D69EDD58D7DDD7B66BE6592EED /* DateInlineFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4911915CFBD3AB6962AD804ADF835B /* DateInlineFieldRow.swift */; };
+		7D4103D396B2519600255CA676DE1D62 /* BaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951170979FD4B36BA263BF50AD62459 /* BaseRow.swift */; };
+		7D7A4D7461BFCE3FDA6933BED414E273 /* Pods-DynamicView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DB05258C1B903FBCE7636424BFEA44 /* Pods-DynamicView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		827BD4C80F28C2F7E9521461DA5CBDAE /* RuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738C43E901B8F9CE1975D7DB48C06B6 /* RuleURL.swift */; };
+		8E610F054B0F5FDBBB26323A0C73F4F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		987A9AA62B48BC871C21106E68F9257E /* RuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA50770ACFE3764D201EEE99ED3FEB /* RuleEmail.swift */; };
+		9926EF73DC7EFCBD50D322671328B24F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F42B8997DE7CA009695D440C06130 /* Cell.swift */; };
+		99BC63A28EB55DCDC2CA8EAC1886E077 /* StepperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A66784A23EDE4FF16ADA3BD53BD21 /* StepperRow.swift */; };
+		9CD46DF12CFA5C561B75EF20B95EECD0 /* PickerInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A456362C72EAEEB7BFA31C633D75B /* PickerInputRow.swift */; };
+		9D0221E27E37CDA9DF26DD3CFA56D75B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD7A70AAC861F0E7A91E64695175A3 /* DPDKeyboardListener.swift */; };
+		A0E6C2F2A364C6349BD2B79F520A8958 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF24B44FE9306C79BCAD776AC85ED0C /* Helpers.swift */; };
+		A38A545D1ADAFAB39F6A28B499D9AAB9 /* GenericMultipleSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A804462B05E5E49E67C59C024A10097 /* GenericMultipleSelectorRow.swift */; };
+		A401CF18D15DF246F40FAC4E8F06CBC7 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F37BA1D7A8B75931FCF97FBBCFBE3E /* DPDUIView+Extension.swift */; };
+		A5B27A12053041F38D47538E48678881 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D46A335518539616623BE76EDC80E /* Validation.swift */; };
+		A812E7811821F66B3B7499F6F1B513BA /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67C2C4C1CACE4A8B6ED1D42A9A0BE7 /* DPDConstants.swift */; };
+		AA0CDD726F8156D06FDFE3C6FAB27C52 /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51D472F18A250919A34C12A935079F /* ButtonRow.swift */; };
+		AA7012D4A2E0818B5D6C2BAA5DFA3CD2 /* RuleEqualsToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43C7DF315E73A60A22C66279EF28E3 /* RuleEqualsToRow.swift */; };
+		AC6581D9387744158B44BE683403C3BC /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E2718062B5E86461190236117CCB /* DropDown-dummy.m */; };
+		AD5D905ABDE0ED57B623A541EB1DBC20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		B3B5B10201D9BA6470173163A6F6725E /* SelectorAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BC6C1BE160C714C57AED395671235 /* SelectorAlertController.swift */; };
+		B5BA32808AFF5DC9C2723CD85931B9DB /* TextAreaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65175921A596FACD6CC560973EFDE4F4 /* TextAreaRow.swift */; };
+		BB04DAD5C6DCAE93C15FED1090520610 /* RuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE2034ADE5BD0FD9BC363751A2B8A0 /* RuleRequired.swift */; };
+		BD6FEBF93A8FB23057B38BC52342AF19 /* Eureka.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0086219BA449430B4105239D22DEF527 /* Eureka.bundle */; };
+		BFE53EDC99E6B10F19E85ECBD01FB33E /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B6F82103FAC230B9D7DD046F75703 /* RowType.swift */; };
+		C657B4C0DFB6C3BE1119C1BB8CAD4C78 /* RuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63570A136AD97140EE015E8A5F4FE503 /* RuleLength.swift */; };
+		CCAB89C5B0F52B0F69DBED084DDFCFBB /* OptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE5D8685DDA06E542DB7C973D4B06 /* OptionsRow.swift */; };
+		D9284875BF00A2033E41A8252CE907A5 /* SelectableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4C62E07544A74CB1A2AFD2BD02CF0 /* SelectableSection.swift */; };
+		DB5214501DA0045F69B3F336F0AB11E8 /* SelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFB6E0659C3F82A666FA6D5FF3262C /* SelectorRow.swift */; };
+		DE6DF70A452BF20CB858BA7072AAE3EA /* RowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD68C4BCE150CC999DA83BFFFA32D9 /* RowProtocols.swift */; };
+		E0946CE4B110F2A64041FAB63546FB48 /* RuleRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C6EBBB9F7D39BDB65057EC34645A5 /* RuleRange.swift */; };
+		E490A481C69CE189A0814626B1251FB4 /* RuleClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E45DE7B876DE81ED15954503C915B8E /* RuleClosure.swift */; };
+		E585A7898FC181529FD2704BEF4CE992 /* DecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215CDFC2E31AF5E29CF0CEF86F7A5F85 /* DecimalFormatter.swift */; };
+		E92B5113A74D07D38C8137460AE0E3C7 /* RuleRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83AFE8CE9F721D27CC8F23F176747DE /* RuleRegExp.swift */; };
+		F1681F8D16AD91A13187576F524783A8 /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FE324BC4483E42BD3E2C942E9BC05 /* HeaderFooterView.swift */; };
+		F2095372A5BB341F1B5469F634EA6687 /* FieldsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B339BBADA0850B4DA591A9F41E1E6FB /* FieldsRow.swift */; };
+		FC505268B5A20F0F00D3BC0A9FF66F99 /* SelectableRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A4D92B6B236CAF09DD13B2A9BD506 /* SelectableRowType.swift */; };
+		FF0168C08BB3555924897006B4AD36DA /* InlineRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391F9C766098793C85F1A8C1A2F50FC /* InlineRowType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		570EB7B1E9A32F93F84FD21CEC7CA7A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5168099F2EBFC99A707C03C9EADE01A5;
+			remoteInfo = DropDown;
+		};
+		F402FC2A2AFABF35D0E93DAADF0268C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 675A114988AE198732ED4AD726408964;
+			remoteInfo = Eureka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0086219BA449430B4105239D22DEF527 /* Eureka.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Eureka.bundle; path = Source/Resources/Eureka.bundle; sourceTree = "<group>"; };
+		09DA1525105DD517509242D530C6C8DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B339BBADA0850B4DA591A9F41E1E6FB /* FieldsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldsRow.swift; path = Source/Rows/FieldsRow.swift; sourceTree = "<group>"; };
+		0FB25F8CE5A4307A47C3F1204302F94F /* PopoverSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSelectorRow.swift; path = Source/Rows/PopoverSelectorRow.swift; sourceTree = "<group>"; };
+		119E3BD76A64B4590AFFB94621FB18BA /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
+		197E16ED5E1C75A6A9720121BF77F5E0 /* Pods-DynamicView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynamicView-dummy.m"; sourceTree = "<group>"; };
+		1A01C98561DA3B2CA4AB8E96AE6225B6 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		1F3FF3D584A6F1516751C9C2A33066A8 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Eureka.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		215CDFC2E31AF5E29CF0CEF86F7A5F85 /* DecimalFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalFormatter.swift; path = Source/Rows/Common/DecimalFormatter.swift; sourceTree = "<group>"; };
+		2260EC5F6A4229B0C6BC3A0A4468379E /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Rows/Common/Protocols.swift; sourceTree = "<group>"; };
+		23DB05258C1B903FBCE7636424BFEA44 /* Pods-DynamicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynamicView-umbrella.h"; sourceTree = "<group>"; };
+		2407617D860C86D1D15DF19AE0A511FA /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		25D85083C3086B95E1C61875D9A7453F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2805DA0700575D2FC684FF881277DDCF /* Pods-DynamicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicView.debug.xcconfig"; sourceTree = "<group>"; };
+		290FC25AB756ACAF66776AD374ADE5BB /* ListCheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCheckRow.swift; path = Source/Rows/SelectableRows/ListCheckRow.swift; sourceTree = "<group>"; };
+		294BC6C1BE160C714C57AED395671235 /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
+		2A6DF3AE37C5330A9F5378745AAF36CB /* Pods-DynamicView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicView-frameworks.sh"; sourceTree = "<group>"; };
+		2C4911915CFBD3AB6962AD804ADF835B /* DateInlineFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineFieldRow.swift; path = Source/Rows/Common/DateInlineFieldRow.swift; sourceTree = "<group>"; };
+		2D43C7DF315E73A60A22C66279EF28E3 /* RuleEqualsToRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEqualsToRow.swift; path = Source/Validations/RuleEqualsToRow.swift; sourceTree = "<group>"; };
+		2E45DE7B876DE81ED15954503C915B8E /* RuleClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleClosure.swift; path = Source/Validations/RuleClosure.swift; sourceTree = "<group>"; };
+		2EBD68C4BCE150CC999DA83BFFFA32D9 /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
+		2F1570A6DA5164B692C8815A19224F1F /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Core.swift; path = Source/Core/Core.swift; sourceTree = "<group>"; };
+		2F51D472F18A250919A34C12A935079F /* ButtonRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRow.swift; path = Source/Rows/ButtonRow.swift; sourceTree = "<group>"; };
+		2FFAE5D8685DDA06E542DB7C973D4B06 /* OptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionsRow.swift; path = Source/Rows/Common/OptionsRow.swift; sourceTree = "<group>"; };
+		30AA0511B735F01C37577F54443BD142 /* Eureka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.xcconfig; sourceTree = "<group>"; };
+		30AB9FA9092208500F053E3CBC1B8674 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
+		3951170979FD4B36BA263BF50AD62459 /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
+		3D688726C2752A4C5A976FE5887A658E /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
+		40F37BA1D7A8B75931FCF97FBBCFBE3E /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		41FE2034ADE5BD0FD9BC363751A2B8A0 /* RuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRequired.swift; path = Source/Validations/RuleRequired.swift; sourceTree = "<group>"; };
+		4A67C2C4C1CACE4A8B6ED1D42A9A0BE7 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		4DAB714EB7749ED69AC48A0342FD9686 /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
+		4EFD7A70AAC861F0E7A91E64695175A3 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		542B6F82103FAC230B9D7DD046F75703 /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
+		5B4D29DCA10491E3950FC1E9B327F0AE /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		5C94E2718062B5E86461190236117CCB /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		5DA4C62E07544A74CB1A2AFD2BD02CF0 /* SelectableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableSection.swift; path = Source/Core/SelectableSection.swift; sourceTree = "<group>"; };
+		607E6E957523BBC263B3920A5275376E /* PickerInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInlineRow.swift; path = Source/Rows/PickerInlineRow.swift; sourceTree = "<group>"; };
+		63570A136AD97140EE015E8A5F4FE503 /* RuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleLength.swift; path = Source/Validations/RuleLength.swift; sourceTree = "<group>"; };
+		635961B2A3ED02B99A48C38FA933A015 /* Pods-DynamicView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicView-resources.sh"; sourceTree = "<group>"; };
+		65175921A596FACD6CC560973EFDE4F4 /* TextAreaRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAreaRow.swift; path = Source/Rows/TextAreaRow.swift; sourceTree = "<group>"; };
+		66EFB6E0659C3F82A666FA6D5FF3262C /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
+		6738C43E901B8F9CE1975D7DB48C06B6 /* RuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleURL.swift; path = Source/Validations/RuleURL.swift; sourceTree = "<group>"; };
+		693C5DA4D971CF4C4B5C41BA4725E8FC /* CellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellType.swift; path = Source/Core/CellType.swift; sourceTree = "<group>"; };
+		6A804462B05E5E49E67C59C024A10097 /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
+		6BE561F44AA625A03A711EA82C25137B /* PushRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRow.swift; path = Source/Rows/PushRow.swift; sourceTree = "<group>"; };
+		6E1DCF41BA297F9CC28419322BB9C480 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
+		6ED8561CF0DAC58FE8F70249B49271B7 /* SliderRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SliderRow.swift; path = Source/Rows/SliderRow.swift; sourceTree = "<group>"; };
+		7058172200DEEDC074E2A523BE46ECA3 /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
+		7CEC3B4405FF9304F615919E06CCF2C2 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
+		8266CFD06B4B10097FFEEDBA9B120ED6 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationAccessoryView.swift; path = Source/Core/NavigationAccessoryView.swift; sourceTree = "<group>"; };
+		8CA4A9D0ADEFA85619FCB1131A466429 /* Pods_DynamicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DynamicView.framework; path = "Pods-DynamicView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9043F5A85B4F90768FAE530580C9756D /* DatePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerRow.swift; path = Source/Rows/DatePickerRow.swift; sourceTree = "<group>"; };
+		90C598B764ACDC35ECD1DB86B56F5F10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9658AB17769294E98AB2294361408452 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		975A456362C72EAEEB7BFA31C633D75B /* PickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInputRow.swift; path = Source/Rows/PickerInputRow.swift; sourceTree = "<group>"; };
+		A140B16EDE8C0D467B1E36A7DCDDEE29 /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
+		A21CCE523FD32BF402FACB83799A0D7A /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
+		A391F9C766098793C85F1A8C1A2F50FC /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
+		AE2EF9E4119A6F57083C56D1BCB6D0B3 /* Pods-DynamicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicView.release.xcconfig"; sourceTree = "<group>"; };
+		B184A2807F169B813F0D4483AEF57FB8 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB60FDABF04878CB9319C3FCC5E4B235 /* SelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorViewController.swift; path = Source/Rows/Controllers/SelectorViewController.swift; sourceTree = "<group>"; };
+		C03A66784A23EDE4FF16ADA3BD53BD21 /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
+		C06E85D177C9B61B8ABCC15B98047DF7 /* PickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerRow.swift; path = Source/Rows/PickerRow.swift; sourceTree = "<group>"; };
+		C181AC53A7E3873223DCEDAF8A9B7D31 /* MultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorRow.swift; path = Source/Rows/MultipleSelectorRow.swift; sourceTree = "<group>"; };
+		C49E8E8460ADE20F83566896472A6741 /* DateRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateRow.swift; path = Source/Rows/DateRow.swift; sourceTree = "<group>"; };
+		CCF24B44FE9306C79BCAD776AC85ED0C /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
+		CD1A4D92B6B236CAF09DD13B2A9BD506 /* SelectableRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableRowType.swift; path = Source/Core/SelectableRowType.swift; sourceTree = "<group>"; };
+		CD4BCA154232698B305E882E67DE0479 /* DateFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFieldRow.swift; path = Source/Rows/Common/DateFieldRow.swift; sourceTree = "<group>"; };
+		CD832621CA69E867918691662AEC7CE5 /* Pods-DynamicView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynamicView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CDAFD4606BB50FD0309D8D6FA21EAD2D /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFA50770ACFE3764D201EEE99ED3FEB /* RuleEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEmail.swift; path = Source/Validations/RuleEmail.swift; sourceTree = "<group>"; };
+		CE072BCBD9184CE1E5303F3B788E7FC3 /* CheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckRow.swift; path = Source/Rows/CheckRow.swift; sourceTree = "<group>"; };
+		CF5E9CC62F06D50A852D15E11BEFA676 /* ButtonRowWithPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRowWithPresent.swift; path = Source/Rows/ButtonRowWithPresent.swift; sourceTree = "<group>"; };
+		D49F0BB00B7B9994F115B9CF6D28A288 /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
+		D4C509027B3871BA04E4652DD7B31396 /* Eureka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Eureka-dummy.m"; sourceTree = "<group>"; };
+		D5705D558880FD5E355D10C55BA7622B /* Eureka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Eureka.modulemap; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E23F42B8997DE7CA009695D440C06130 /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Source/Core/Cell.swift; sourceTree = "<group>"; };
+		E2F55061BBD8A0257465D27C038CA092 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
+		E39C0A9FD7ADF53948F8255EA36A3005 /* Pods-DynamicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DynamicView.modulemap"; sourceTree = "<group>"; };
+		E6E6462FFA11CDFD6F8BEB1BCAFB869B /* LabelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelRow.swift; path = Source/Rows/LabelRow.swift; sourceTree = "<group>"; };
+		E719A84C93EED5E5636D3110A1114AB6 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DropDown.modulemap; sourceTree = "<group>"; };
+		E71D46A335518539616623BE76EDC80E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Core/Validation.swift; sourceTree = "<group>"; };
+		E78FE324BC4483E42BD3E2C942E9BC05 /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
+		EA560DA534A873D5BCB9351819B7A04F /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
+		EC35A8B18A8A191D4EA30777E1E050D9 /* Pods-DynamicView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynamicView-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED2C6EBBB9F7D39BDB65057EC34645A5 /* RuleRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRange.swift; path = Source/Validations/RuleRange.swift; sourceTree = "<group>"; };
+		EE4C07FCF8741A517A4B18DB7008147C /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
+		F3C13CB48FBDD8DD85CE152130B2B67B /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
+		F83AFE8CE9F721D27CC8F23F176747DE /* RuleRegExp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRegExp.swift; path = Source/Validations/RuleRegExp.swift; sourceTree = "<group>"; };
+		F89E46C33706DC9C5D8804E9096E2345 /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
+		F93264D08BBC73CFD2907760F9C822F0 /* FieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldRow.swift; path = Source/Rows/Common/FieldRow.swift; sourceTree = "<group>"; };
+		FCB103BDE50D940803865CBA82A4DF10 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB7AB09A90E8E946D11EA8A668C73CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4FAA477A8C3708CC93E84D2B069084 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE28484C632D94C9779E4E74AE0BD29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9CD6F441E6B30601549781F5DB2D12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A459D8E0AC5F79ADD60D9F6F4B8F1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E610F054B0F5FDBBB26323A0C73F4F9 /* Foundation.framework in Frameworks */,
+				AD5D905ABDE0ED57B623A541EB1DBC20 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1012487C8F5B9ED32758E3A7558917A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5705D558880FD5E355D10C55BA7622B /* Eureka.modulemap */,
+				30AA0511B735F01C37577F54443BD142 /* Eureka.xcconfig */,
+				D4C509027B3871BA04E4652DD7B31396 /* Eureka-dummy.m */,
+				3D688726C2752A4C5A976FE5887A658E /* Eureka-prefix.pch */,
+				EE4C07FCF8741A517A4B18DB7008147C /* Eureka-umbrella.h */,
+				25D85083C3086B95E1C61875D9A7453F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Eureka";
+			sourceTree = "<group>";
+		};
+		1A5EA70B57FEA9B009DD067CAD809552 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2407617D860C86D1D15DF19AE0A511FA /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3097AF879694F9D0FC497C65DE994256 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1329B4939405ABC5A07514368A740B9 /* Pods-DynamicView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5AC14E89D1FDDBCDFFA3DA723065971A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E719A84C93EED5E5636D3110A1114AB6 /* DropDown.modulemap */,
+				7CEC3B4405FF9304F615919E06CCF2C2 /* DropDown.xcconfig */,
+				5C94E2718062B5E86461190236117CCB /* DropDown-dummy.m */,
+				1A01C98561DA3B2CA4AB8E96AE6225B6 /* DropDown-prefix.pch */,
+				B184A2807F169B813F0D4483AEF57FB8 /* DropDown-umbrella.h */,
+				90C598B764ACDC35ECD1DB86B56F5F10 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		6EB0702CCA36CAD7D0EA052DC2576173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DF1035F4AAD3E6F072770B4E151ED89 /* DropDown */,
+				F64147CF16CE29907E87AE49D3B253F1 /* Eureka */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				6EB0702CCA36CAD7D0EA052DC2576173 /* Pods */,
+				876C002D4309DD257AB38CF2197FA5D6 /* Products */,
+				3097AF879694F9D0FC497C65DE994256 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		876C002D4309DD257AB38CF2197FA5D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDAFD4606BB50FD0309D8D6FA21EAD2D /* DropDown.framework */,
+				1F3FF3D584A6F1516751C9C2A33066A8 /* Eureka.framework */,
+				8CA4A9D0ADEFA85619FCB1131A466429 /* Pods_DynamicView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DF1035F4AAD3E6F072770B4E151ED89 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				4A67C2C4C1CACE4A8B6ED1D42A9A0BE7 /* DPDConstants.swift */,
+				4EFD7A70AAC861F0E7A91E64695175A3 /* DPDKeyboardListener.swift */,
+				40F37BA1D7A8B75931FCF97FBBCFBE3E /* DPDUIView+Extension.swift */,
+				FCB103BDE50D940803865CBA82A4DF10 /* DropDown.swift */,
+				9658AB17769294E98AB2294361408452 /* DropDown+Appearance.swift */,
+				5B4D29DCA10491E3950FC1E9B327F0AE /* DropDownCell.swift */,
+				1A5EA70B57FEA9B009DD067CAD809552 /* Resources */,
+				5AC14E89D1FDDBCDFFA3DA723065971A /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		A1329B4939405ABC5A07514368A740B9 /* Pods-DynamicView */ = {
+			isa = PBXGroup;
+			children = (
+				09DA1525105DD517509242D530C6C8DB /* Info.plist */,
+				E39C0A9FD7ADF53948F8255EA36A3005 /* Pods-DynamicView.modulemap */,
+				CD832621CA69E867918691662AEC7CE5 /* Pods-DynamicView-acknowledgements.markdown */,
+				EC35A8B18A8A191D4EA30777E1E050D9 /* Pods-DynamicView-acknowledgements.plist */,
+				197E16ED5E1C75A6A9720121BF77F5E0 /* Pods-DynamicView-dummy.m */,
+				2A6DF3AE37C5330A9F5378745AAF36CB /* Pods-DynamicView-frameworks.sh */,
+				635961B2A3ED02B99A48C38FA933A015 /* Pods-DynamicView-resources.sh */,
+				23DB05258C1B903FBCE7636424BFEA44 /* Pods-DynamicView-umbrella.h */,
+				2805DA0700575D2FC684FF881277DDCF /* Pods-DynamicView.debug.xcconfig */,
+				AE2EF9E4119A6F57083C56D1BCB6D0B3 /* Pods-DynamicView.release.xcconfig */,
+			);
+			name = "Pods-DynamicView";
+			path = "Target Support Files/Pods-DynamicView";
+			sourceTree = "<group>";
+		};
+		C879CFE129002A152CDD576546257BCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0086219BA449430B4105239D22DEF527 /* Eureka.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F64147CF16CE29907E87AE49D3B253F1 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB714EB7749ED69AC48A0342FD9686 /* ActionSheetRow.swift */,
+				F3C13CB48FBDD8DD85CE152130B2B67B /* AlertRow.swift */,
+				3951170979FD4B36BA263BF50AD62459 /* BaseRow.swift */,
+				2F51D472F18A250919A34C12A935079F /* ButtonRow.swift */,
+				CF5E9CC62F06D50A852D15E11BEFA676 /* ButtonRowWithPresent.swift */,
+				E23F42B8997DE7CA009695D440C06130 /* Cell.swift */,
+				693C5DA4D971CF4C4B5C41BA4725E8FC /* CellType.swift */,
+				CE072BCBD9184CE1E5303F3B788E7FC3 /* CheckRow.swift */,
+				2F1570A6DA5164B692C8815A19224F1F /* Core.swift */,
+				CD4BCA154232698B305E882E67DE0479 /* DateFieldRow.swift */,
+				2C4911915CFBD3AB6962AD804ADF835B /* DateInlineFieldRow.swift */,
+				F89E46C33706DC9C5D8804E9096E2345 /* DateInlineRow.swift */,
+				9043F5A85B4F90768FAE530580C9756D /* DatePickerRow.swift */,
+				C49E8E8460ADE20F83566896472A6741 /* DateRow.swift */,
+				215CDFC2E31AF5E29CF0CEF86F7A5F85 /* DecimalFormatter.swift */,
+				F93264D08BBC73CFD2907760F9C822F0 /* FieldRow.swift */,
+				0B339BBADA0850B4DA591A9F41E1E6FB /* FieldsRow.swift */,
+				6E1DCF41BA297F9CC28419322BB9C480 /* Form.swift */,
+				6A804462B05E5E49E67C59C024A10097 /* GenericMultipleSelectorRow.swift */,
+				E78FE324BC4483E42BD3E2C942E9BC05 /* HeaderFooterView.swift */,
+				CCF24B44FE9306C79BCAD776AC85ED0C /* Helpers.swift */,
+				A391F9C766098793C85F1A8C1A2F50FC /* InlineRowType.swift */,
+				E6E6462FFA11CDFD6F8BEB1BCAFB869B /* LabelRow.swift */,
+				290FC25AB756ACAF66776AD374ADE5BB /* ListCheckRow.swift */,
+				C181AC53A7E3873223DCEDAF8A9B7D31 /* MultipleSelectorRow.swift */,
+				A21CCE523FD32BF402FACB83799A0D7A /* MultipleSelectorViewController.swift */,
+				8266CFD06B4B10097FFEEDBA9B120ED6 /* NavigationAccessoryView.swift */,
+				E2F55061BBD8A0257465D27C038CA092 /* Operators.swift */,
+				2FFAE5D8685DDA06E542DB7C973D4B06 /* OptionsRow.swift */,
+				607E6E957523BBC263B3920A5275376E /* PickerInlineRow.swift */,
+				975A456362C72EAEEB7BFA31C633D75B /* PickerInputRow.swift */,
+				C06E85D177C9B61B8ABCC15B98047DF7 /* PickerRow.swift */,
+				0FB25F8CE5A4307A47C3F1204302F94F /* PopoverSelectorRow.swift */,
+				119E3BD76A64B4590AFFB94621FB18BA /* PresenterRowType.swift */,
+				2260EC5F6A4229B0C6BC3A0A4468379E /* Protocols.swift */,
+				6BE561F44AA625A03A711EA82C25137B /* PushRow.swift */,
+				30AB9FA9092208500F053E3CBC1B8674 /* Row.swift */,
+				A140B16EDE8C0D467B1E36A7DCDDEE29 /* RowControllerType.swift */,
+				2EBD68C4BCE150CC999DA83BFFFA32D9 /* RowProtocols.swift */,
+				542B6F82103FAC230B9D7DD046F75703 /* RowType.swift */,
+				2E45DE7B876DE81ED15954503C915B8E /* RuleClosure.swift */,
+				CDFA50770ACFE3764D201EEE99ED3FEB /* RuleEmail.swift */,
+				2D43C7DF315E73A60A22C66279EF28E3 /* RuleEqualsToRow.swift */,
+				63570A136AD97140EE015E8A5F4FE503 /* RuleLength.swift */,
+				ED2C6EBBB9F7D39BDB65057EC34645A5 /* RuleRange.swift */,
+				F83AFE8CE9F721D27CC8F23F176747DE /* RuleRegExp.swift */,
+				41FE2034ADE5BD0FD9BC363751A2B8A0 /* RuleRequired.swift */,
+				6738C43E901B8F9CE1975D7DB48C06B6 /* RuleURL.swift */,
+				EA560DA534A873D5BCB9351819B7A04F /* Section.swift */,
+				7058172200DEEDC074E2A523BE46ECA3 /* SegmentedRow.swift */,
+				CD1A4D92B6B236CAF09DD13B2A9BD506 /* SelectableRowType.swift */,
+				5DA4C62E07544A74CB1A2AFD2BD02CF0 /* SelectableSection.swift */,
+				294BC6C1BE160C714C57AED395671235 /* SelectorAlertController.swift */,
+				66EFB6E0659C3F82A666FA6D5FF3262C /* SelectorRow.swift */,
+				BB60FDABF04878CB9319C3FCC5E4B235 /* SelectorViewController.swift */,
+				6ED8561CF0DAC58FE8F70249B49271B7 /* SliderRow.swift */,
+				C03A66784A23EDE4FF16ADA3BD53BD21 /* StepperRow.swift */,
+				D49F0BB00B7B9994F115B9CF6D28A288 /* SwitchRow.swift */,
+				65175921A596FACD6CC560973EFDE4F4 /* TextAreaRow.swift */,
+				E71D46A335518539616623BE76EDC80E /* Validation.swift */,
+				C879CFE129002A152CDD576546257BCD /* Resources */,
+				1012487C8F5B9ED32758E3A7558917A5 /* Support Files */,
+			);
+			name = Eureka;
+			path = Eureka;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1904CD5E5CEA9226AFC355E19C3EB159 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7E74DF0C455B0BC43BFDD1D0163E64 /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F412B9DD67AD97FE17C6F9513349CCA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0D960DBEF20736A7A505A9250942F1 /* Eureka-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A85CF3E8EC2386A5C64BFE80150461 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7A4D7461BFCE3FDA6933BED414E273 /* Pods-DynamicView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45143614893062803984DA50AB90C1D5 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				ED45CA897A4B81CB8204042001D7AEE8 /* Sources */,
+				3FE28484C632D94C9779E4E74AE0BD29 /* Frameworks */,
+				D7D924A57BC65B5D41E46B156A8DCF2B /* Resources */,
+				1904CD5E5CEA9226AFC355E19C3EB159 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = CDAFD4606BB50FD0309D8D6FA21EAD2D /* DropDown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		675A114988AE198732ED4AD726408964 /* Eureka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C8E1EFA0C5DC6AD96DBEE0EFA14308 /* Build configuration list for PBXNativeTarget "Eureka" */;
+			buildPhases = (
+				B0652E9682BC86759CB160A39B336F2B /* Sources */,
+				9A459D8E0AC5F79ADD60D9F6F4B8F1CB /* Frameworks */,
+				F0646B43B36FB653DE1592EFD881271F /* Resources */,
+				1F412B9DD67AD97FE17C6F9513349CCA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eureka;
+			productName = Eureka;
+			productReference = 1F3FF3D584A6F1516751C9C2A33066A8 /* Eureka.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5B123FDA6064C51F1D115B0058E2122 /* Pods-DynamicView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A617B72474BEBE3CD1B3540DA3FD27F3 /* Build configuration list for PBXNativeTarget "Pods-DynamicView" */;
+			buildPhases = (
+				89670EA538C8611E40A191B7FCC1AFE4 /* Sources */,
+				3DB7AB09A90E8E946D11EA8A668C73CE /* Frameworks */,
+				71A85CF3E8EC2386A5C64BFE80150461 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB337ADB70ED611EFB4C380AB04701AD /* PBXTargetDependency */,
+				296ECE685B9456627322BFA96D74EE8B /* PBXTargetDependency */,
+			);
+			name = "Pods-DynamicView";
+			productName = "Pods-DynamicView";
+			productReference = 8CA4A9D0ADEFA85619FCB1131A466429 /* Pods_DynamicView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 876C002D4309DD257AB38CF2197FA5D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */,
+				675A114988AE198732ED4AD726408964 /* Eureka */,
+				D5B123FDA6064C51F1D115B0058E2122 /* Pods-DynamicView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7D924A57BC65B5D41E46B156A8DCF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C293AEA575D6E5186739D1B07805F2 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0646B43B36FB653DE1592EFD881271F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6FEBF93A8FB23057B38BC52342AF19 /* Eureka.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89670EA538C8611E40A191B7FCC1AFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267B635686617BA1A01987009E16DE86 /* Pods-DynamicView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0652E9682BC86759CB160A39B336F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A179EA67ECDDBB23F30CF0B0A71A617 /* ActionSheetRow.swift in Sources */,
+				654744F1D8E5A8DB4711E81DC6CC99C3 /* AlertRow.swift in Sources */,
+				7D4103D396B2519600255CA676DE1D62 /* BaseRow.swift in Sources */,
+				AA0CDD726F8156D06FDFE3C6FAB27C52 /* ButtonRow.swift in Sources */,
+				1ACA00A9EC125081B88B9228462431B8 /* ButtonRowWithPresent.swift in Sources */,
+				9926EF73DC7EFCBD50D322671328B24F /* Cell.swift in Sources */,
+				144A795542A55FCA27F839FD8B3848AD /* CellType.swift in Sources */,
+				1D4CD70DC32B037FCD6320FE079695D5 /* CheckRow.swift in Sources */,
+				02F07D843F3B3151880D1E67205C11A0 /* Core.swift in Sources */,
+				265A3BCF8B426717E8EE1CAD4341F99A /* DateFieldRow.swift in Sources */,
+				7CE512D69EDD58D7DDD7B66BE6592EED /* DateInlineFieldRow.swift in Sources */,
+				2189F5569BACCE66FD41F5E58FF351B8 /* DateInlineRow.swift in Sources */,
+				5D647533060C688C633E15C86553B868 /* DatePickerRow.swift in Sources */,
+				6F9F25DE63532C8DE5077822E6316111 /* DateRow.swift in Sources */,
+				E585A7898FC181529FD2704BEF4CE992 /* DecimalFormatter.swift in Sources */,
+				5A380E0127635057397F45AFBD13B255 /* Eureka-dummy.m in Sources */,
+				23E6887F5ADC8D4917BC12B079864E1D /* FieldRow.swift in Sources */,
+				F2095372A5BB341F1B5469F634EA6687 /* FieldsRow.swift in Sources */,
+				0C19B0ADBDDF9D1F35443473DD32F58C /* Form.swift in Sources */,
+				A38A545D1ADAFAB39F6A28B499D9AAB9 /* GenericMultipleSelectorRow.swift in Sources */,
+				F1681F8D16AD91A13187576F524783A8 /* HeaderFooterView.swift in Sources */,
+				A0E6C2F2A364C6349BD2B79F520A8958 /* Helpers.swift in Sources */,
+				FF0168C08BB3555924897006B4AD36DA /* InlineRowType.swift in Sources */,
+				57F029A6EAD66812E9B0C1319AFE527B /* LabelRow.swift in Sources */,
+				28500C67AF0CB1EB34B53FFA93C3D27F /* ListCheckRow.swift in Sources */,
+				76110C1B9D1144D99D2C179DC74121DD /* MultipleSelectorRow.swift in Sources */,
+				59947C008333007F823B0922EE87F96B /* MultipleSelectorViewController.swift in Sources */,
+				1EEFBE2820F6BEAC9BAD184673293C9E /* NavigationAccessoryView.swift in Sources */,
+				7B19019174C42D7D481C1B120272443B /* Operators.swift in Sources */,
+				CCAB89C5B0F52B0F69DBED084DDFCFBB /* OptionsRow.swift in Sources */,
+				0B2FCAF300C1B74DA6343E48B7D5F3F6 /* PickerInlineRow.swift in Sources */,
+				9CD46DF12CFA5C561B75EF20B95EECD0 /* PickerInputRow.swift in Sources */,
+				1C5B941F79B39828B27EAAD3C9AF7B4B /* PickerRow.swift in Sources */,
+				17048D78835182A0B4E9D7926DA75DAD /* PopoverSelectorRow.swift in Sources */,
+				4EA524A2BD2D970745B89DAADDF7719E /* PresenterRowType.swift in Sources */,
+				0F47F6ABDFD61B71965C06B833435E53 /* Protocols.swift in Sources */,
+				29DBA0C923DE13772022DB52DBAF3CEE /* PushRow.swift in Sources */,
+				1772EAFC71C30BD931A9585212CA03AC /* Row.swift in Sources */,
+				17A3FB1B471D1C1A61BCFBBF5831D845 /* RowControllerType.swift in Sources */,
+				DE6DF70A452BF20CB858BA7072AAE3EA /* RowProtocols.swift in Sources */,
+				BFE53EDC99E6B10F19E85ECBD01FB33E /* RowType.swift in Sources */,
+				E490A481C69CE189A0814626B1251FB4 /* RuleClosure.swift in Sources */,
+				987A9AA62B48BC871C21106E68F9257E /* RuleEmail.swift in Sources */,
+				AA7012D4A2E0818B5D6C2BAA5DFA3CD2 /* RuleEqualsToRow.swift in Sources */,
+				C657B4C0DFB6C3BE1119C1BB8CAD4C78 /* RuleLength.swift in Sources */,
+				E0946CE4B110F2A64041FAB63546FB48 /* RuleRange.swift in Sources */,
+				E92B5113A74D07D38C8137460AE0E3C7 /* RuleRegExp.swift in Sources */,
+				BB04DAD5C6DCAE93C15FED1090520610 /* RuleRequired.swift in Sources */,
+				827BD4C80F28C2F7E9521461DA5CBDAE /* RuleURL.swift in Sources */,
+				51F62349D05FCB3B6E1E8AD406DEEFE7 /* Section.swift in Sources */,
+				04A9A536DFAF3C5EC723F92EED127215 /* SegmentedRow.swift in Sources */,
+				FC505268B5A20F0F00D3BC0A9FF66F99 /* SelectableRowType.swift in Sources */,
+				D9284875BF00A2033E41A8252CE907A5 /* SelectableSection.swift in Sources */,
+				B3B5B10201D9BA6470173163A6F6725E /* SelectorAlertController.swift in Sources */,
+				DB5214501DA0045F69B3F336F0AB11E8 /* SelectorRow.swift in Sources */,
+				25A70264F9301E7603D9883777DE8050 /* SelectorViewController.swift in Sources */,
+				306BD477167820D6CDECDCE1D7445ECD /* SliderRow.swift in Sources */,
+				99BC63A28EB55DCDC2CA8EAC1886E077 /* StepperRow.swift in Sources */,
+				3E89604392C5EBDC5E27937AA57C5AC0 /* SwitchRow.swift in Sources */,
+				B5BA32808AFF5DC9C2723CD85931B9DB /* TextAreaRow.swift in Sources */,
+				A5B27A12053041F38D47538E48678881 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED45CA897A4B81CB8204042001D7AEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A812E7811821F66B3B7499F6F1B513BA /* DPDConstants.swift in Sources */,
+				9D0221E27E37CDA9DF26DD3CFA56D75B /* DPDKeyboardListener.swift in Sources */,
+				A401CF18D15DF246F40FAC4E8F06CBC7 /* DPDUIView+Extension.swift in Sources */,
+				442ADADA3215E1E5CA1557E708D4228C /* DropDown+Appearance.swift in Sources */,
+				AC6581D9387744158B44BE683403C3BC /* DropDown-dummy.m in Sources */,
+				02CAE638EF1CEEBD6F5740498F9CA3F8 /* DropDown.swift in Sources */,
+				098F056D90AF9CD3FD60D8A81DF043B6 /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		296ECE685B9456627322BFA96D74EE8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Eureka;
+			target = 675A114988AE198732ED4AD726408964 /* Eureka */;
+			targetProxy = F402FC2A2AFABF35D0E93DAADF0268C0 /* PBXContainerItemProxy */;
+		};
+		AB337ADB70ED611EFB4C380AB04701AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = 5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */;
+			targetProxy = 570EB7B1E9A32F93F84FD21CEC7CA7A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DE9C07EF222B9035E0AFE58CE20491D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2EF9E4119A6F57083C56D1BCB6D0B3 /* Pods-DynamicView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DynamicView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynamicView/Pods-DynamicView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DynamicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B4CE68E5C8B2C378502781C741D9306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEC3B4405FF9304F615919E06CCF2C2 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F5EB86BB29399CECCB7751986F55F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AA0511B735F01C37577F54443BD142 /* Eureka.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9A97AD9A0E3A570E98D914F14D0296A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2805DA0700575D2FC684FF881277DDCF /* Pods-DynamicView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DynamicView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynamicView/Pods-DynamicView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DynamicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB1FF9B7D64C74F43B7996AF4FB0D9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEC3B4405FF9304F615919E06CCF2C2 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2DB219A0CD5D0BFF1867CBC3F24018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AA0511B735F01C37577F54443BD142 /* Eureka.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Eureka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Eureka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45143614893062803984DA50AB90C1D5 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1FF9B7D64C74F43B7996AF4FB0D9A9 /* Debug */,
+				2B4CE68E5C8B2C378502781C741D9306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C8E1EFA0C5DC6AD96DBEE0EFA14308 /* Build configuration list for PBXNativeTarget "Eureka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DB219A0CD5D0BFF1867CBC3F24018B /* Debug */,
+				2F5EB86BB29399CECCB7751986F55F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A617B72474BEBE3CD1B3540DA3FD27F3 /* Build configuration list for PBXNativeTarget "Pods-DynamicView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A97AD9A0E3A570E98D914F14D0296A0 /* Debug */,
+				1DE9C07EF222B9035E0AFE58CE20491D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

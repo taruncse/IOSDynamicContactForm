@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="24" reuseIdentifier="AddPhone" rowHeight="51" id="A7w-hk-T6O" customClass="AddPhoneCell" customModule="DynamicView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A7w-hk-T6O" id="N2o-mE-8jo">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5r-dB-YTl">
+                        <rect key="frame" x="143" y="11" width="228" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-9Z-CHc">
+                        <rect key="frame" x="16" y="25.5" width="72" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="bkk-ou-Mcj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-03-aB8">
+                        <rect key="frame" x="90" y="10" width="46" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="z5f-Ku-k9J"/>
+                        </constraints>
+                        <state key="normal" title="Select"/>
+                        <connections>
+                            <action selector="selectBtn:" destination="A7w-hk-T6O" eventType="touchUpInside" id="SSP-Js-ORg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cEB-9Z-CHc" firstAttribute="centerY" secondItem="sC0-03-aB8" secondAttribute="centerY" id="6W1-4E-anR"/>
+                    <constraint firstItem="sC0-03-aB8" firstAttribute="baseline" secondItem="i5r-dB-YTl" secondAttribute="baseline" id="7aZ-yE-95K"/>
+                    <constraint firstItem="sC0-03-aB8" firstAttribute="leading" secondItem="cEB-9Z-CHc" secondAttribute="trailing" constant="2" id="SDX-t4-gfS"/>
+                    <constraint firstItem="i5r-dB-YTl" firstAttribute="top" secondItem="N2o-mE-8jo" secondAttribute="topMargin" id="Tyf-OV-wMA"/>
+                    <constraint firstItem="i5r-dB-YTl" firstAttribute="leading" secondItem="sC0-03-aB8" secondAttribute="trailing" constant="7" id="V8k-8x-68H"/>
+                    <constraint firstItem="cEB-9Z-CHc" firstAttribute="leading" secondItem="N2o-mE-8jo" secondAttribute="leadingMargin" id="qiT-e5-vdd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i5r-dB-YTl" secondAttribute="trailing" constant="-5" id="r4n-Of-dXr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneTextView" destination="i5r-dB-YTl" id="ECZ-vb-DA0"/>
+                <outlet property="relationLabel" destination="cEB-9Z-CHc" id="UE5-Cb-xnr"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="3.5"/>
+        </tableViewCell>
+    </objects>
+</document>
