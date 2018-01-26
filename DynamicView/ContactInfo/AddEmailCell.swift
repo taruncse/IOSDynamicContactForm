@@ -9,8 +9,8 @@ import Foundation
 import Eureka
 import DropDown
 
-final class AddEmailRow: Row<AddEmailCell>, RowType, InlineRowType {
-    required init(tag: String?) {
+ class _AddEmailRow: Row<AddEmailCell> {
+    public required init(tag: String?) {
         super.init(tag: tag)
         cellProvider = CellProvider<AddEmailCell>(nibName: "AddEmail")
         //value = Email(numberType: "hello", number: "world")
@@ -18,7 +18,9 @@ final class AddEmailRow: Row<AddEmailCell>, RowType, InlineRowType {
     }
 }
 
-final class AddEmailCell: Cell<Email>, CellType {
+ final class AddEmailRow: _AddEmailRow, RowType { }
+
+final class AddEmailCell: Cell<Email>, CellType{
     
     @IBOutlet weak var emailTextField: UITextField!
 
@@ -39,6 +41,10 @@ final class AddEmailCell: Cell<Email>, CellType {
         dropDown.show()
         
     }
+
+//    var addEmailRow: _AddEmailRow {
+//        return row as! _AddEmailRow
+//    }
     
     @IBOutlet weak var relationLabel: UILabel!
     private static var dateFormatter: DateFormatter = {
@@ -80,6 +86,7 @@ final class AddEmailCell: Cell<Email>, CellType {
         
         // set a light background color for our cell
         backgroundColor = UIColor(red:0.984, green:0.988, blue:0.976, alpha:1.00)
+        emailTextField.addTarget(self, action: #selector(AddEmailCell.textFieldDidChange(_:)), for: .editingChanged)
     }
     
     override func update() {
@@ -89,7 +96,7 @@ final class AddEmailCell: Cell<Email>, CellType {
         textLabel?.text = nil
         
         // get the value from our row
-        guard let user = row.value else { return }
+        //guard let user = row.value else { return }
         
         // set the image to the homeImageView. You might want to do this with AlamofireImage or another similar framework in a real project
 //        if let url = user.pictureUrl, let data = try? Data(contentsOf: url) {
@@ -106,6 +113,12 @@ final class AddEmailCell: Cell<Email>, CellType {
 
         //nameLabel.text = user.name
         //dateLabel.text = AddSocialMedia.dateFormatter.string(from: user.dateOfBirth)
+    }
+
+    @objc
+    open  func textFieldDidChange(_ textField: UITextField) {
+        row.value = Email(numberType: "hello", number: textField.text!)
+        print(textField.text!)
     }
     
 }

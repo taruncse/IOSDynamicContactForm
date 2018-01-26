@@ -90,7 +90,12 @@ class ViewController: FormViewController {
                                 $0.multivaluedRowToInsertAt = { index in
                                     return UserInfoRow {
                                         $0.title = "Date"
-                                        $0.value = User(name: "TKB", email: "tkb@gmail.com")
+                                    }
+                                    .onChange { row in
+                                        if let str = row.cell.emailLabel.text {
+                                            print(str)
+                                        }
+
                                     }
                                     
                                     //return AddPhoneRow()
@@ -125,7 +130,7 @@ class ViewController: FormViewController {
 //                    $0.placeholder = "Phone Number\(index)"
 //                }
                 
-                return AddEmailRow()
+                return AddEmailRow(tag: "tagaddemail")
             }
         }
         
