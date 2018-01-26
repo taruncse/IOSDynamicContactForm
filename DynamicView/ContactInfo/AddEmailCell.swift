@@ -34,7 +34,7 @@ final class AddEmailCell: Cell<Email>, CellType{
             print("Selected item: \(item) at index: \(index)")
             self.relationLabel.text = item
 
-            self.row.value = Email(emailType: self.relationLabel.text!, email: self.emailTextField.text!)
+            self.row.value = Email(type: self.relationLabel.text!, email: self.emailTextField.text!)
         }
         dropDown.show()
         
@@ -74,18 +74,18 @@ final class AddEmailCell: Cell<Email>, CellType{
         // get the value from our row
         //guard let user = row.value else { return }
         //emailTextField.text = user.email
-        //relationLabel.text = user.emailType
+        //relationLabel.text = user.type
     }
 
     @objc
     open  func textFieldDidChange(_ textField: UITextField) {
-        row.value = Email(emailType: relationLabel.text!, email: textField.text!)
+        row.value = Email(type: relationLabel.text!, email: textField.text!)
     }
 
 }
 
 struct Email: Equatable {
-    var emailType: String
+    var type: String
     var email: String
 }
 

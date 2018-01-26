@@ -34,7 +34,7 @@ final class AddPhoneCell: Cell<Phone>, CellType {
             print("Selected item: \(item) at index: \(index)")
             self.relationLabel.text = item
 
-            self.row.value = Phone(numberType: self.relationLabel.text!, number: self.phoneTextView.text!)
+            self.row.value = Phone(type: self.relationLabel.text!, number: self.phoneTextView.text!)
 
         }
         dropDown.show()
@@ -80,16 +80,16 @@ final class AddPhoneCell: Cell<Phone>, CellType {
 
         // set the texts to the labels
         phoneTextView.text = user.number
-        relationLabel.text = user.numberType
+        relationLabel.text = user.type
     }
     @objc
     open  func textFieldDidChange(_ textField: UITextField) {
-        self.row.value = Phone(numberType: self.relationLabel.text!, number: textField.text!)
+        self.row.value = Phone(type: self.relationLabel.text!, number: textField.text!)
     }
 }
 
 struct Phone: Equatable {
-    var numberType: String
+    var type: String
     var number: String
 }
 

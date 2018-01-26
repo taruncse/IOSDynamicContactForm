@@ -56,15 +56,15 @@ class ViewController: FormViewController {
         form +++ Section("Name")
             <<< TextRow(){ row in
                 //row.title = "Text Row"
-                row.tag = "tagNameFirstName"
+                row.tag = "firstName"
                 row.placeholder = "First Name (Required)"
             }
             <<< TextRow(){ row in
-                row.tag = "tagNameMiddleName"
+                row.tag = "middleName"
                 row.placeholder = "Middle Name"
             }
             <<< TextRow(){ row in
-                row.tag = "tagNameLastName"
+                row.tag = "lastName"
                 row.placeholder = "Last Name (Required)"
             }
         
@@ -73,14 +73,14 @@ class ViewController: FormViewController {
                 $0.tag = "profilePicture"
                 $0.title = "Select Image"
             }
-             +++ Section("Relations picker")
-            <<< PickerInputRow<String>("Picker Input Row"){
+                +++ Section("Relations")
+            <<< PickerInputRow<String>("relation"){
                 $0.title = "Relations"
                 $0.options = ["Family","Business","Friend","Acquaintance"]
                 $0.value = $0.options.first
         } +++ Section("Contact")
             <<< TextRow(){ row in
-                row.tag = "tagContactPhone"
+                row.tag = "primaryPhone"
                 row.placeholder = "Cell/Phone"
         }
 
@@ -93,7 +93,7 @@ class ViewController: FormViewController {
                 cell.textLabel?.textAlignment = .left
             }
             }
-            $0.tag = "tagMultiplePhone"
+            $0.tag = "otherPhones"
             $0.multivaluedRowToInsertAt = { index in
 
                 return AddPhoneRow()
@@ -102,10 +102,9 @@ class ViewController: FormViewController {
 
 
        form +++ Section("Email")
-     //+++ Section("Contact")
             <<< TextRow(){ row in
                 //row.title = "Text Row"
-                row.tag = "tagEmail"
+                row.tag = "primaryEmail"
                 row.placeholder = "Primary Email (Required)"
         }
         +++
@@ -117,7 +116,7 @@ class ViewController: FormViewController {
                 cell.textLabel?.textAlignment = .left
             }
             }
-            $0.tag = "tagMultipleEmail"
+            $0.tag = "otherEmails"
             $0.multivaluedRowToInsertAt = { index in
 
                 return AddEmailRow()
@@ -144,7 +143,11 @@ class ViewController: FormViewController {
 
         }
 
-
+        form +++ Section("Primary Address")
+                <<< AddAddressRow(){ row in
+            //row.title = "Text Row"
+            row.tag = "primaryAddress"
+        }
 
         +++
         MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
@@ -156,7 +159,7 @@ class ViewController: FormViewController {
                         cell.textLabel?.textAlignment = .left
                 }
             }
-            $0.tag = "tagAddAddressRow"
+            $0.tag = "otherAddresses"
             $0.multivaluedRowToInsertAt = { index in
 
                  return AddAddressRow()

@@ -81,7 +81,7 @@ final class AddAddressCell: Cell<Address>, CellType {
     @objc
     open  func textFieldDidChange(_ textField: UITextField) {
         if self.row.value == nil{
-            self.row.value = Address(street: "", state: "", postal: "", country: "", city: "", unit: "")
+            self.row.value = Address(street: "", stateProvince: "", zip: "", country: "", city: "", unit: "")
         }
         switch (textField.tag) {
         case 10:
@@ -93,9 +93,9 @@ final class AddAddressCell: Cell<Address>, CellType {
         case 13:
             self.row.value!.country = textField.text!
         case 14:
-            self.row.value!.postal = textField.text!
+            self.row.value!.zip = textField.text!
         case 15:
-            self.row.value!.state = textField.text!
+            self.row.value!.stateProvince = textField.text!
         default:
             print("Default")
         }
@@ -105,8 +105,8 @@ final class AddAddressCell: Cell<Address>, CellType {
 
 struct Address: Equatable {
     var street: String
-    var state: String
-    var postal: String
+    var stateProvince: String
+    var zip: String
     var country: String
     var city: String
     var unit: String
