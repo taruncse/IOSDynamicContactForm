@@ -32,6 +32,12 @@ final class AddFamilyCell: Cell<Family>, CellType {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             self.relationTextView.text = item
+
+            if self.row.value == nil{
+                self.row.value = Family(firstName: "", middleName: "", lastName: "", phone: "", email: "", relation: "", notes: "")
+            }else {
+                self.row.value!.relation = item
+            }
         }
         dropDown.show()
     }
@@ -45,11 +51,7 @@ final class AddFamilyCell: Cell<Family>, CellType {
     @IBOutlet weak var emailTextView: UITextField!
     @IBOutlet weak var relationTextView: UILabel!
     @IBOutlet weak var noteTextView: UITextField!
-   
-    
-    //@IBOutlet weak var nameLabel: UILabel!
-    //@IBOutlet weak var emailLabel: UILabel!
-    //@IBOutlet weak var dateLabel: UILabel!
+
     
     private static var dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -74,22 +76,20 @@ final class AddFamilyCell: Cell<Family>, CellType {
         assistantImageView.contentMode = .scaleAspectFill
         assistantImageView.clipsToBounds = true
         
-        // define fonts for our labels
-        
-        //nameLabel.font = .systemFont(ofSize: 18)
-        //emailLabel.font = .systemFont(ofSize: 13.3)
-        //dateLabel.font = .systemFont(ofSize: 13.3)
-        
-        // set the textColor for our labels
-        //for label in [emailLabel, dateLabel, nameLabel] {
-        //    label?.textColor = .gray
-        //}
-        
         // specify the desired height for our cell
         height = { return 329 }
         
         // set a light background color for our cell
         backgroundColor = UIColor(red:0.984, green:0.988, blue:0.976, alpha:1.00)
+
+
+        firstNameTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        middleNameTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        lastNameTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        phoneTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        emailTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        noteTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+
     }
     
     override func update() {
@@ -100,20 +100,29 @@ final class AddFamilyCell: Cell<Family>, CellType {
         
         // get the value from our row
         guard let user = row.value else { return }
-        
-        // set the image to the homeImageView. You might want to do this with AlamofireImage or another similar framework in a real project
-//        if let url = user.pictureUrl, let data = try? Data(contentsOf: url) {
-//            assistantImageView.image = UIImage(data: data)
-//        } else {
-            assistantImageView.image = UIImage(named: "placeholder")
-       // }
-        
-        // set the texts to the labels
-        //emailLabel.text = user.email
-        //nameLabel.text = user.name
-        //dateLabel.text = AddFamilyCell.dateFormatter.string(from: user.dateOfBirth)
     }
-    
+    @objc
+    open  func textFieldDidChange(_ textField: UITextField) {
+        if self.row.value == nil{
+            self.row.value = Family(firstName: "", middleName: "", lastName: "", phone: "", email: "", relation: "", notes: "")
+        }
+        switch (textField.tag) {
+        case 10:
+            self.row.value!.firstName = textField.text!
+        case 11:
+            self.row.value!.middleName = textField.text!
+        case 12:
+            self.row.value!.lastName = textField.text!
+        case 13:
+            self.row.value!.phone = textField.text!
+        case 14:
+            self.row.value!.email = textField.text!
+        case 15:
+            self.row.value!.notes = textField.text!
+        default:
+            print("Default")
+        }
+    }
 }
 
 struct Family: Equatable {

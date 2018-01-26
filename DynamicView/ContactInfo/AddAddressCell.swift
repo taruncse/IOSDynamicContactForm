@@ -54,23 +54,20 @@ final class AddAddressCell: Cell<Address>, CellType {
         // configure our profile picture imageView
         homeImageView.contentMode = .scaleAspectFill
         homeImageView.clipsToBounds = true
-        
-        // define fonts for our labels
-        
-        //nameLabel.font = .systemFont(ofSize: 18)
-        //emailLabel.font = .systemFont(ofSize: 13.3)
-        //dateLabel.font = .systemFont(ofSize: 13.3)
-        
-        // set the textColor for our labels
-        //for label in [emailLabel, dateLabel, nameLabel] {
-        //    label?.textColor = .gray
-        //}
-        
+
         // specify the desired height for our cell
         height = { return 255 }
         
         // set a light background color for our cell
         backgroundColor = UIColor(red:0.984, green:0.988, blue:0.976, alpha:1.00)
+
+        streetTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        unitTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        cityTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        countryTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        postalTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+        stateTextView.addTarget(self, action: #selector(AddPhoneCell.textFieldDidChange(_:)), for: .editingChanged)
+
     }
     
     override func update() {
@@ -78,21 +75,30 @@ final class AddAddressCell: Cell<Address>, CellType {
         
         // we do not want to show the default UITableViewCell's textLabel
         textLabel?.text = nil
-        
-        // get the value from our row
-        //guard let user = row.value else { return }
-        
-        // set the image to the homeImageView. You might want to do this with AlamofireImage or another similar framework in a real project
-        //if let url = user.state, let data = try? Data(contentsOf: url) {
-            //homeImageView.image = UIImage(data: data)
-        //} else {
-            homeImageView.image = UIImage(named: "placeholder")
-        //}
-        
-        // set the texts to the labels
-        //emailLabel.text = user.email
-        //nameLabel.text = user.name
-        //dateLabel.text = AddAddressCell.dateFormatter.string(from: user.dateOfBirth)
+
+    }
+
+    @objc
+    open  func textFieldDidChange(_ textField: UITextField) {
+        if self.row.value == nil{
+            self.row.value = Address(street: "", state: "", postal: "", country: "", city: "", unit: "")
+        }
+        switch (textField.tag) {
+        case 10:
+            self.row.value!.street = textField.text!
+        case 11:
+            self.row.value!.unit = textField.text!
+        case 12:
+            self.row.value!.city = textField.text!
+        case 13:
+            self.row.value!.country = textField.text!
+        case 14:
+            self.row.value!.postal = textField.text!
+        case 15:
+            self.row.value!.state = textField.text!
+        default:
+            print("Default")
+        }
     }
     
 }

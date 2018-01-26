@@ -70,6 +70,7 @@ class ViewController: FormViewController {
         
             +++ Section("Profile Picture")
             <<< ImageRow(){
+                $0.tag = "profilePicture"
                 $0.title = "Select Image"
             }
              +++ Section("Relations picker")
