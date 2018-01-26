@@ -45,6 +45,8 @@ class ViewController: FormViewController {
         // Leaves 20pt of space between the keyboard and the highlighted row after scrolling to an off screen row
         rowKeyboardSpacing = 20
         
+        form +++ Section("")
+
         form +++ Section("Name")
             <<< TextRow(){ row in
                 //row.title = "Text Row"
@@ -130,7 +132,7 @@ class ViewController: FormViewController {
 //                    $0.placeholder = "Phone Number\(index)"
 //                }
                 
-                return AddEmailRow(tag: "tagaddemail")
+                return AddEmailRow()
             }
         }
         

@@ -9,16 +9,12 @@ import Foundation
 import Eureka
 import DropDown
 
- class _AddEmailRow: Row<AddEmailCell> {
+final class AddEmailRow: Row<AddEmailCell> , RowType {
     public required init(tag: String?) {
         super.init(tag: tag)
         cellProvider = CellProvider<AddEmailCell>(nibName: "AddEmail")
-        //value = Email(numberType: "hello", number: "world")
-
     }
 }
-
- final class AddEmailRow: _AddEmailRow, RowType { }
 
 final class AddEmailCell: Cell<Email>, CellType{
     
@@ -37,15 +33,13 @@ final class AddEmailCell: Cell<Email>, CellType{
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             self.relationLabel.text = item
+
+            self.row.value = Email(emailType: self.relationLabel.text!, email: self.emailTextField.text!)
         }
         dropDown.show()
         
     }
 
-//    var addEmailRow: _AddEmailRow {
-//        return row as! _AddEmailRow
-//    }
-    
     @IBOutlet weak var relationLabel: UILabel!
     private static var dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -66,21 +60,6 @@ final class AddEmailCell: Cell<Email>, CellType{
         // we do not want our cell to be selected in this case. If you use such a cell in a list then you might want to change this.
         selectionStyle = .none
         
-        // configure our profile picture imageView
-        //assistantImageView.contentMode = .scaleAspectFill
-        //assistantImageView.clipsToBounds = true
-        
-        // define fonts for our labels
-        
-        //nameLabel.font = .systemFont(ofSize: 18)
-        //emailLabel.font = .systemFont(ofSize: 13.3)
-        //dateLabel.font = .systemFont(ofSize: 13.3)
-        
-        // set the textColor for our labels
-        //for label in [emailLabel, dateLabel, nameLabel] {
-        //    label?.textColor = .gray
-        //}
-        
         // specify the desired height for our cell
         height = { return 51 }
         
@@ -92,45 +71,25 @@ final class AddEmailCell: Cell<Email>, CellType{
     override func update() {
         super.update()
         
-        // we do not want to show the default UITableViewCell's textLabel
-        textLabel?.text = nil
-        
         // get the value from our row
         //guard let user = row.value else { return }
-        
-        // set the image to the homeImageView. You might want to do this with AlamofireImage or another similar framework in a real project
-//        if let url = user.pictureUrl, let data = try? Data(contentsOf: url) {
-//            assistantImageView.image = UIImage(data: data)
-//        } else {
-            //assistantImageView.image = UIImage(named: "placeholder")
-       // }
-        
-        // set the texts to the labels
-//        emailTextField.text = user.number
-//        relationLabel.text = user.numberType
-    emailTextField.text = "hi there"
-        relationLabel.text = "boo"
-
-        //nameLabel.text = user.name
-        //dateLabel.text = AddSocialMedia.dateFormatter.string(from: user.dateOfBirth)
+        //emailTextField.text = user.email
+        //relationLabel.text = user.emailType
     }
 
     @objc
     open  func textFieldDidChange(_ textField: UITextField) {
-        row.value = Email(numberType: "hello", number: textField.text!)
-        print(textField.text!)
+        row.value = Email(emailType: relationLabel.text!, email: textField.text!)
     }
-    
+
 }
 
 struct Email: Equatable {
-    var numberType: String
-    var number: String
-
-    public var description: String { return "MyClass: \(number) \(numberType)" }
+    var emailType: String
+    var email: String
 }
 
 func ==(lhs: Email, rhs: Email) -> Bool {
-    return lhs.number == rhs.number
+    return lhs.email == rhs.email
 }
 

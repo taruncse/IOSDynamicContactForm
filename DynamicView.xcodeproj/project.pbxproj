@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11B1C95F7CBFD7AF50DBDEA0 /* Pods_DynamicView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC696184B813A09A9BBE110 /* Pods_DynamicView.framework */; };
+		561DC4FF2019AD9D009F4EB6 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561DC4FD2019AD9D009F4EB6 /* UserInfoCell.xib */; };
 		563869B11FDE98E000470E64 /* AddFamilyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563869AF1FDE98E000470E64 /* AddFamilyCell.swift */; };
 		563869B21FDE98E000470E64 /* AddSocialMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563869B01FDE98E000470E64 /* AddSocialMediaCell.swift */; };
 		563869B41FDFA16200470E64 /* AddPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563869B31FDFA16200470E64 /* AddPhone.xib */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		561DC4FD2019AD9D009F4EB6 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		561DC5002019ADA1009F4EB6 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		563869AF1FDE98E000470E64 /* AddFamilyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyCell.swift; sourceTree = "<group>"; };
 		563869B01FDE98E000470E64 /* AddSocialMediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSocialMediaCell.swift; sourceTree = "<group>"; };
 		563869B31FDFA16200470E64 /* AddPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPhone.xib; sourceTree = "<group>"; };
@@ -91,6 +94,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		561DC4FB2019AD90009F4EB6 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				561DC5002019ADA1009F4EB6 /* UserInfoCell.swift */,
+				561DC4FD2019AD9D009F4EB6 /* UserInfoCell.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		56EF3B941FDE7A90004474FA /* ContactInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		56F37BA61FD814B100FCFAE6 /* DynamicView */ = {
 			isa = PBXGroup;
 			children = (
+				561DC4FB2019AD90009F4EB6 /* Test */,
 				56EF3B941FDE7A90004474FA /* ContactInfo */,
 				56F37BB91FD928EC00FCFAE6 /* ImageRow */,
 				56F37BA71FD814B100FCFAE6 /* AppDelegate.swift */,
@@ -225,6 +238,7 @@
 				56F37BAF1FD814B100FCFAE6 /* Assets.xcassets in Resources */,
 				56F37BC51FDAA2F600FCFAE6 /* UserInfoCell.xib in Resources */,
 				563869B41FDFA16200470E64 /* AddPhone.xib in Resources */,
+				561DC4FF2019AD9D009F4EB6 /* UserInfoCell.xib in Resources */,
 				56EF3B931FDE7A46004474FA /* AddFamily.xib in Resources */,
 				56F37BAD1FD814B100FCFAE6 /* Main.storyboard in Resources */,
 				56EF3B921FDE7A46004474FA /* AddSocialMedia.xib in Resources */,
