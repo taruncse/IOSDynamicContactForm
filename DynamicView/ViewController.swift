@@ -17,10 +17,16 @@ class ViewController: FormViewController {
         self.view.addSubview(navBar);
         let navItem = UINavigationItem(title: "Create Contact");
         let cancle = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.cancel, target: nil, action: #selector(backButtonPressed));
-        let add = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: nil, action: #selector(backButtonPressed));
+        let add = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: nil, action: #selector(createContact));
         navItem.leftBarButtonItem = cancle;
         navItem.rightBarButtonItem = add;
         navBar.setItems([navItem], animated: false);
+    }
+
+    @objc func createContact(){
+        let valuesDictionary = form.values() as NSDictionary
+        print("\(valuesDictionary)")
+
     }
     @objc func backButtonPressed() {
         
@@ -29,9 +35,9 @@ class ViewController: FormViewController {
       
         // Get the value of all rows which have a Tag assigned
         // The dictionary contains the 'rowTag':value pairs.
-        let valuesDictionary = form.values() as NSDictionary
+        //let valuesDictionary = form.values() as NSDictionary
 //        let multipleEmail = valuesDictionary.value(forKey: "tagMultiplePhone")// as! [User]
-        print("\(valuesDictionary)")
+        //print("\(valuesDictionary)")
          //print("\(form.values())")
     }
     override func viewDidLoad() {
@@ -71,45 +77,29 @@ class ViewController: FormViewController {
                 $0.title = "Relations"
                 $0.options = ["Family","Business","Friend","Acquaintance"]
                 $0.value = $0.options.first
-        }
-             +++ Section("Contact")
+        } +++ Section("Contact")
             <<< TextRow(){ row in
                 row.tag = "tagContactPhone"
                 row.placeholder = "Cell/Phone"
         }
-        //title = "Multivalued Examples"
-        form +++
-            MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
-                                //$0.tag = "tagAddPhone"
-                                $0.addButtonProvider = { _ in return ButtonRow {
-                                        $0.title = "Add Tag"
-                                    }.cellUpdate { cell, row in
-                                        cell.textLabel?.textAlignment = .left
-                                    }
-                                }
-                
-                                $0.tag = "tagMultiplePhone"
-                                $0.multivaluedRowToInsertAt = { index in
-                                    return UserInfoRow {
-                                        $0.title = "Date"
-                                    }
-                                    .onChange { row in
-                                        if let str = row.cell.emailLabel.text {
-                                            print(str)
-                                        }
 
-                                    }
-                                    
-                                    //return AddPhoneRow()
-                                    //return UserInfoRow()
-//                                    let row = UserInfoRow(tag: "phninfo2")
-//                                    row.value = User(name: "Mathias",
-//                                            email: "mathias@xmartlabs.com",
-//                                            dateOfBirth: Date(timeIntervalSince1970: 712119600),
-//                                            pictureUrl: URL(string: "http://lh4.ggpht.com/VpeucXbRtK2pmVY6At76vU45Q7YWXB6kz25Sm_JKW1tgfmJDP3gSAlDwowjGEORSM-EW=w300"))
-//
-//                                    return row
+        +++
+        MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
+
+            $0.addButtonProvider = { _ in return ButtonRow {
+                $0.title = "Add Phone Number"
+            }.cellUpdate { cell, row in
+                cell.textLabel?.textAlignment = .left
+            }
+            }
+            $0.tag = "tagMultiplePhone"
+            $0.multivaluedRowToInsertAt = { index in
+
+                return AddPhoneRow()
+            }
         }
+
+
        form +++ Section("Email")
      //+++ Section("Contact")
             <<< TextRow(){ row in
@@ -128,14 +118,13 @@ class ViewController: FormViewController {
             }
             $0.tag = "tagMultipleEmail"
             $0.multivaluedRowToInsertAt = { index in
-//                return NameRow() {
-//                    $0.placeholder = "Phone Number\(index)"
-//                }
-                
+
                 return AddEmailRow()
             }
         }
-        
+
+
+
         +++
         MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
             
@@ -148,16 +137,14 @@ class ViewController: FormViewController {
             }
             $0.tag = "tagAddAssistantRow"
             $0.multivaluedRowToInsertAt = { index in
-//                return NameRow() {
-//                    $0.placeholder = "Phone Number\(index)"
-//                }
-               //return self.getCustomeView()
                 
                 return AddAssistantRow()
             }
 
         }
-        
+
+
+
         +++
         MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
             
@@ -170,9 +157,7 @@ class ViewController: FormViewController {
             }
             $0.tag = "tagAddAddressRow"
             $0.multivaluedRowToInsertAt = { index in
-//                return NameRow() {
-//                    $0.placeholder = "Phone Number\(index)"
-//                }
+
                  return AddAddressRow()
             }
         }
@@ -190,9 +175,7 @@ class ViewController: FormViewController {
             }
             $0.tag = "tagAddSocialMediaRow"
             $0.multivaluedRowToInsertAt = { index in
-//                return NameRow() {
-//                    $0.placeholder = "Phone Number\(index)"
-//                }
+
                 if(index==0){
                    return AddSocialMediaRow()
                 }else{
@@ -218,20 +201,12 @@ class ViewController: FormViewController {
             }
             $0.tag = "tagAddFamilyRow"
             $0.multivaluedRowToInsertAt = { index in
-//                return NameRow() {
-//                    $0.placeholder = "Phone Number\(index)"
-//                }
                 return AddFamilyRow(){  index in
                     print("position \(index.baseCell.baseRow)")
                 }
              
             }
         }
-    }
-    
-//    func getCustomeView() -> Section {
-//
-//    }
     
     
     class EurekaLogoViewNib: UIView {
@@ -275,3 +250,36 @@ class ViewController: FormViewController {
     }
 }
 
+//title = "Multivalued Examples"
+/*form +++
+    MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete]) {
+                        //$0.tag = "tagAddPhone"
+                        $0.addButtonProvider = { _ in return ButtonRow {
+                                $0.title = "Add Tag"
+                            }.cellUpdate { cell, row in
+                                cell.textLabel?.textAlignment = .left
+                            }
+                        }
+
+                        $0.tag = "tagMultiplePhone"
+                        $0.multivaluedRowToInsertAt = { index in
+                            return UserInfoRow {
+                                $0.title = "Date"
+                            }
+                            .onChange { row in
+                                if let str = row.cell.emailLabel.text {
+                                    print(str)
+                                }
+
+                            }
+
+                            //return AddPhoneRow()
+                            //return UserInfoRow()
+//                                    let row = UserInfoRow(tag: "phninfo2")
+//                                    row.value = User(name: "Mathias",
+//                                            email: "mathias@xmartlabs.com",
+//                                            dateOfBirth: Date(timeIntervalSince1970: 712119600),
+//                                            pictureUrl: URL(string: "http://lh4.ggpht.com/VpeucXbRtK2pmVY6At76vU45Q7YWXB6kz25Sm_JKW1tgfmJDP3gSAlDwowjGEORSM-EW=w300"))
+//
+//                                    return row
+}*/
