@@ -103,7 +103,7 @@ final class AddAddressCell: Cell<Address>, CellType {
     
 }
 
-struct Address: Equatable {
+/*struct Address: Equatable {
     var street: String
     var stateProvince: String
     var zip: String
@@ -114,5 +114,5 @@ struct Address: Equatable {
 
 func ==(lhs: Address, rhs: Address) -> Bool {
     return lhs.street == rhs.street
-}
+}*/
 

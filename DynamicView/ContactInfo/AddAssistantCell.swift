@@ -99,7 +99,7 @@ final class AddAssistantCell: Cell<Assistant>, CellType {
     }
 }
 
-struct Assistant: Equatable {
+/*struct Assistant: Equatable {
     var firstName: String
     var middleName: String
     var lastName: String
@@ -110,5 +110,5 @@ struct Assistant: Equatable {
 
 func ==(lhs: Assistant, rhs: Assistant) -> Bool {
     return lhs.email == rhs.email
-}
+}*/
 
