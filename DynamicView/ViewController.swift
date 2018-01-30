@@ -78,7 +78,14 @@ class ViewController: FormViewController {
                 $0.title = "Relations"
                 $0.options = ["Family","Business","Friend","Acquaintance"]
                 $0.value = $0.options.first
-        } +++ Section("Contact")
+        }
+                <<< PickerInputRow<String>("secondRelation"){
+            $0.title = "Relations"
+            $0.options = ["Family","Business","Friend","Acquaintance"]
+            $0.value = $0.options.first
+        }
+
+                +++ Section("Contact")
             <<< TextRow(){ row in
                 row.tag = "primaryPhone"
                 row.placeholder = "Cell/Phone"
