@@ -110,6 +110,12 @@ class ViewController: FormViewController {
 
                 return AddPhoneRow()
             }
+            // Default value and some default row, this row doesn't need any tag.
+            for index in 1...3{
+                    $0 <<< AddPhoneRow() { row in
+                        row.value = Phone(type: "Home", number: "\(index)")
+                }
+            }
         }
 
 
