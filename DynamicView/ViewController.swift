@@ -76,13 +76,18 @@ class ViewController: FormViewController {
                 +++ Section("Relations")
             <<< PickerInputRow<String>("relation"){
                 $0.title = "Relations"
-                $0.options = ["Family","Business","Friend","Acquaintance"]
+                $0.options = ["Business","Family","Friend","Acquaintance"]
                 $0.value = $0.options.first
         }
-                <<< PickerInputRow<String>("secondRelation"){
+          <<< PickerInputRow<String>("secondRelation") {
             $0.title = "Relations"
-            $0.options = ["Family","Business","Friend","Acquaintance"]
+            $0.options = ["Parent", "Children", "Spouse", "Sibling", "Other"]
             $0.value = $0.options.first
+            // Added hidden condition on relation tag.
+            $0.hidden = .function(["relation"], { form -> Bool in
+                let row: RowOf<String>! = form.rowBy(tag: "relation")
+                return row.value ?? "Business" != "Family"
+            })
         }
 
                 +++ Section("Contact")
